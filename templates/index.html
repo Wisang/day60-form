@@ -5,8 +5,10 @@
     <title>Form Test</title>
 </head>
 <body>
-    <label for="name">Name <input placeholder="Name"></label>
-    <label for="pass">Password <input placeholder="password"></label>
+<form action="{{ url_for('receive_data') }}" method="post">
+    <label type="text">Name <input placeholder="Name" name="username"></label>
+    <label type="text">Password <input placeholder="password" name="password"></label>
     <button type="submit">Ok</button>
+</form>
 </body>
 </html>
